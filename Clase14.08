@@ -1,0 +1,41 @@
+let nombre = "Pimienta";
+
+// Edad
+let edad = 10;
+
+// Precio
+let precio = 99.90;  // Sin símbolo de dólar porque el tipo de dato es numérico
+
+// Nombres de series
+let series = ["The Office", "Breaking Bad", "Bojack Horseman"];
+
+// Películas (nombre, año de estreno, nombres de protagonistas)
+let peliculas = [
+    {
+        nombre: "Inception",
+        añoEstreno: 2010,
+        protagonistas: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+    },
+    {
+        nombre: "The Matrix",
+        añoEstreno: 1999,
+        protagonistas: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+        nombre: "Interstellar",
+        añoEstreno: 2014,
+        protagonistas: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    }
+];
+
+// Imprimiendo los valores en la consola
+console.log("Nombre:", nombre);
+console.log("Edad:", edad);
+console.log("Precio: $" + precio.toFixed(2));  // .toFixed(2) asegura que el precio tenga dos decimales
+console.log("Series favoritas:", series.join(", "));
+
+console.log("Películas:");
+peliculas.forEach((pelicula, index) => {
+    console.log(${index + 1}. ${pelicula.nombre} (Año: ${pelicula.añoEstreno}));
+    console.log("   Protagonistas:", pelicula.protagonistas.join(", "));
+});
